@@ -1,5 +1,5 @@
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/service-worker-test/service-worker.js', {scope: '/'}).then(function(registration) {
+  navigator.serviceWorker.register('/service-worker-test/service-worker.js', {scope: '/service-worker-test/'}).then(function(registration) {
     console.log('serviceWorker registered');
     window.sw = registration.active;
     window.addEventListener('beforeunload', function(event) {
